@@ -1,0 +1,27 @@
+{
+    "name": "vighdaniel/wp-plugin",
+    "type": "project",
+    "description": "A litle plugin conainer to make things easier and contained. No pun intended...",
+    "license": "MIT",
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Includes\\": "includes/",
+            "WpPlugin\\": "vendor/vighdaniel/wp-plugin/src",
+            "Jamesckemp\\": "vendor/jamesckemp/wp-settings/src"
+        },    
+        "files": [
+            "includes/Helpers/helpers.php", 
+            "vendor/vighdaniel/wp-plugin/src/Core/Helpers/helpers.php"
+        ]
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
